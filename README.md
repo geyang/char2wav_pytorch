@@ -1,4 +1,6 @@
 # Deep Machine Translation [Work-In-Progress 2017-04-02]
+[![](https://img.shields.io/badge/link_on-GitHub-brightgreen.svg?style=flat-square)](https://github.com/episodeyang/deep_machine_translation/tree/master#deep-machine-translation-work-in-progress-2017-04-02)
+
 
 This is a fun week-long project I did to implement a sequence to sequence model in PyTorch. The project uses language pairs from the Anki project as the training set.
 
