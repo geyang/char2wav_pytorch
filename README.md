@@ -63,9 +63,11 @@ optional arguments:
 
 ## Key Learning
 
-- **Good Demo can be trained quickly**. Sean Roberson's demos are very nice for teaching, partially because the training converges very quickly. Most of his demo converge in less than half an hour on a MBP. 
+- **Good Demo train fast**. Sean Roberson's demos are very nice for teaching, partially because the training converges very quickly. Most of his demo converge in less than half an hour on a MBP. 
 
-    As a corollary, any model that does not improve within a few minutes of training should raise a red flag.
+- **Write Evaluation Functions Early**. You can't manually check if the results make sense until you have writen the evaluation functions. 
+    
+    When everything is done correctly, the evaluation gives sensible results very quickly.
 
 - **Teacher forcing can be a hyper parameter**. During training, we can tune the teacher forcing ratio between 0 and 1.
 
