@@ -116,7 +116,8 @@ class SampleRNN(nn.Module):
         """takes in the batch_size of the input."""
         return [layer.init_hidden(batch_size, *args, **kwrags) for layer in self.layers]
 
-    def forward(self, input, hidden, target=None, teacher_r=0, max_output_length=None):
+    # todo: add teacher_forcing to the wavelet output?
+    def forward(self, input, hidden, target=None):
         """
         hidden is a list where each item is the hidden vector for each layer.
         ```
