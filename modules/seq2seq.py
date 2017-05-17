@@ -4,6 +4,9 @@ from torch.autograd import Variable
 
 import utils
 
+# todo: change word seq2seq to char seq2seq
+# todo: add attention to decoder
+
 
 class EncoderRNN(nn.Module):
     """"""
@@ -99,9 +102,6 @@ def init_hidden(self, batch_size, random=False):
                 batch_size,
                 self.hidden_size))  # TODO: attention
 
-
-# 1. [ ] get training hooked up
-#   1. [ ]
 
 import random
 

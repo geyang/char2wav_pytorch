@@ -65,7 +65,7 @@ class PerforatedRNN(nn.Module):
         # NOTE: no support for sequence index advanced indexing.
         # output_perforated[::k] = output
         for i in range(seq_len):
-            output_perforated[i] = output
+            output_perforated[i*k] = output
         return output_perforated, hidden
 
     def init_hidden(self, batch_size, rand: bool = False):
